@@ -1,1 +1,65 @@
+==========================================
+Grammar BNF
+Simulasi Compiler While Loop
+==========================================
 
+<program> ::= <while_statement>
+
+<while_statement> ::= "while"
+                      "("
+                      <condition>
+                      ")"
+                      "{"
+                      <statement>
+                      "}"
+
+<condition> ::= <identifier>
+                <relational_operator>
+                <number>
+
+<statement> ::= <identifier>
+                "="
+                <expression>
+                ";"
+
+<expression> ::= <identifier>
+                 <arithmetic_operator>
+                 <number>
+
+<identifier> ::= letter
+               | letter <identifier>
+
+<number> ::= digit
+           | digit <number>
+
+<relational_operator> ::= <
+                        | >
+                        | <=
+                        | >=
+                        | ==
+                        | !=
+
+<arithmetic_operator> ::= +
+                        | -
+                        | *
+                        | /
+
+==========================================
+Contoh Program
+==========================================
+
+while (x < 10)
+{
+    x = x + 1;
+}
+
+==========================================
+Hasil Three Address Code
+==========================================
+
+L1:
+ifFalse x < 10 goto L2
+t1 = x + 1
+x = t1
+goto L1
+L2:
