@@ -2,6 +2,10 @@
 
 ## Nama Mahasiswa
 Muhamad Andriyansyah
+## Nim Mahasiswa
+231011401293
+## Kelas
+06TPLE006
 
 ## Mata Kuliah
 Teknik Kompilasi
